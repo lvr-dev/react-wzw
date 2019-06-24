@@ -3,7 +3,7 @@ import './EmployeeRow.css';
 import { Employee } from '../types/Employee';
 import { getFullName } from '../lib/utils';
 import { EmployeeDetails } from '../employee-details/EmployeeDetails';
-import { StatusIcon } from '../layout/StatusIcon';
+import { StatusIcon } from '../shared/StatusIcon';
 
 
 export const EmployeeRow: FunctionComponent<{employee:Employee}> = ({employee}) => {
