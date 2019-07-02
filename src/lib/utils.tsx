@@ -1,6 +1,6 @@
-import { Person } from '../types/Person';
+import Employee from '../types/Employee';
 
-export const getFullName = function getFullName(person: Person) {
+export const getFullName = function getFullName(person: Employee) {
     if (person.firstName && person.prefix) {
         return `${person.firstName} ${person.prefix} ${person.lastName}`;
     }

@@ -1,17 +1,31 @@
-.sub-header {
-    min-height: 90px;
-    padding: 24px;
-    background-color: rgb(244,244,244);
-    border-bottom: solid 1px rgb(222, 222, 222);
-    color: rgb(55, 73, 85);
-}
-
-.center-wrapper {
-    width: 80%;
-    margin: 0 auto;
+.searchbar-wrapper {
+    min-height: 60px;
+    padding: 12px;
     text-align: center;
+    border-bottom: solid 1px rgb(222, 222, 222);
+}
+.collapsable-row {
+    min-height: 56px;
+    padding: 6px 48px;
 }
 
-h1 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+.flex-row {
+    display: flex;
+    /*flex-direction: column;*/
+}
+
+.content-label {
+    font-size: 0.9em;
+    margin-right: 12px;
+}
+
+.content-row {
+    font-size: 1.1em;
+}
+
+
+@media screen and (max-width: 600px) {
+    .collapsable-row {
+        margin-left: 30px;
+    }
 }

@@ -1,7 +1,5 @@
-import { Person } from './Person';
-
-export interface Employee extends Person {
-    id: number,
+export default interface Employee {
+    id: string,
     lastName: string,
     firstName?: string,
     prefix?: string,
@@ -9,5 +7,5 @@ export interface Employee extends Person {
     since: string,
     until: string,
     status: string,
-    visible: boolean
+    visible: string
 }
