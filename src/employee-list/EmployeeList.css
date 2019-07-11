@@ -1,4 +1,4 @@
-.searchbar-wrapper {
+.util-header {
     min-height: 60px;
     padding: 12px;
     text-align: center;
@@ -11,9 +11,18 @@
 
 .flex-row {
     display: flex;
-    /*flex-direction: column;*/
 }
 
+.filler {
+    flex-grow: 1;
+}
+.flexitem-large {
+
+}
+
+.icon-wrapper-right {
+    margin-right: 30px;
+}
 .content-label {
     font-size: 0.9em;
     margin-right: 12px;

@@ -17,7 +17,7 @@ export const SearchBar: FunctionComponent<SearchProps> = ({setSearch}) => {
         e.preventDefault();
         const searchTerm:string | undefined = searchValue ? searchValue : undefined;
         setSearch('lastName', searchTerm);
-    }
+    };
 
     return (
         <form className="search">

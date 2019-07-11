@@ -3,10 +3,11 @@ import './EmployeeList.css';
 import { EmployeeRow } from './EmployeeRow';
 import Employee from '../types/Employee';
 
+
 export const EmployeeList:  FunctionComponent<{employees:Employee[]}> = ({employees}) => {
     const rows: any[] = [];
     employees.map((emp) => {
-        if (emp.visible) {
+        if (emp.id && emp.visible) {
             rows.push(<EmployeeRow key={emp.id} employee={emp}/>);
         }
         return rows;
@@ -15,6 +16,7 @@ export const EmployeeList:  FunctionComponent<{employees:Employee[]}> = ({employ
         <Fragment>
             {rows}
         </Fragment>
+
     );
 };
 

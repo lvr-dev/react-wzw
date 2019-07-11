@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function useApiGetHook<T>(initialData: T, initialUrl: string):[
@@ -20,8 +20,9 @@ export default function useApiGetHook<T>(initialData: T, initialUrl: string):[
 
             try {
                 const result = await axios(url);
-                console.log(result);
-                setData(result.data);
+                if (result) {
+                    setData(result.data);
+                }
             } catch (error) {
                 setIsError(true);
             }

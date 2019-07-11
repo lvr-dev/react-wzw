@@ -4,7 +4,7 @@ import PencilIcon from '../assets/edit.png';
 
 type IconProps = {
     path: string,
-    id: string
+    id?: string
 }
 
 export const EditIcon: FunctionComponent<IconProps> = ({path, id}) => {
